@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 90 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Web-Logo" serif:id="Web Logo" transform="matrix(0.11225,0,0,0.173333,0,0)">
+        <rect x="0" y="0" width="800" height="600" style="fill:none;"/>
+        <g transform="matrix(74.239,0,0,48.0769,-14258.1,-18349.1)">
+            <g transform="matrix(0.405405,0,0,0.405405,124.668,253.299)">
+                <path d="M172.859,332.018C174.46,333.585 175.453,335.769 175.453,338.184C175.453,340.226 177.111,341.884 179.153,341.884L179.153,346.818C174.388,346.818 170.52,342.949 170.52,338.184C170.52,336.142 168.862,334.484 166.82,334.484L166.82,329.551C168.862,329.551 170.52,327.893 170.52,325.851C170.52,321.086 174.388,317.218 179.153,317.218L179.153,322.151C177.111,322.151 175.453,323.809 175.453,325.851C175.453,328.266 174.46,330.45 172.859,332.018Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,77.2,60.6)">
+                <path d="M125.391,321.301C123.965,322.893 123.097,324.997 123.097,327.301C123.097,329.605 123.965,331.708 125.391,333.301L122.878,333.301C121.752,331.575 121.097,329.514 121.097,327.301C121.097,325.088 121.752,323.027 122.878,321.301L125.391,321.301Z" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>
