@@ -17,13 +17,14 @@
 
 <body>
     <header class="main">
-        <div class="container">
+        <div class="container lg">
             <div class="logo">
                 <img src="images/KyleClayRichards_Logo_YellowGold.svg" />
+                <h1>Kyle Clay Richards</h1>
             </div>
             <nav class="main">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
                     <li><a href="/portfolio">Portfolio</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
@@ -31,40 +32,42 @@
         </div>
     </header>
     <main>
-        <section class="content introduction dark">
-            <div class="container">
-                <!-- <h1>I'm Kyle Clay Richards, a Graphic Designer & Front-end Developer who is passionate about branding and translating creative vision to thoughtful user experiences.</h1> -->
-                 <h1>Art<br/>Design<br/>Code<br/>& Sports</h1>
-                <p class="secondary-heading lg">Graphic Designer & Front-end Developer</p>
-                <img src="images/KyleClayRichards_Headshot2025.jpg" />
+        <section class="content introduction dark p-0">
+            <div class="container lg">
+                <h2>Graphic Designer<br/>Front-end Developer</h2>
             </div>
         </section>
-        <section class="content statement text-center">
-            <div class="container sm">
-                <p class="intro lg">Creative empath specializing in brand identity development, strategy, and execution in print and web-based applications.</p>
+        <section class="content value-statement">
+            <div class="container lg">
+                <h2>Empowering businesses to dominate their industry via brand identity development and full-service marketing efforts in print and digital media.</h2>
+                <div class="actions lg text-right">
+                    <a class="btn" href="portfolio/index.html">More About Me</a>
+                </div>
             </div>
         </section>
-        <section class="content featured-projects">
-            <h2>Featured Projects</h2>
+        <section class="content featured-projects full">
+            <h3>Featured Projects</h3>
             <div class="container">
                 <div class="item">
                     <img src="images/KyleClayRichards_JoryBehavioralHealth_Logo_Thumbnail.jpg" />
                     <div class="hoverlay">
                         <div class="hoverlay-content">
-                            <h3>Jory Behavioral Health</h3>
-                            <p class="secondary-heading sm">Logo Design</p>
+                            <h4>Jory Behavioral Health</h4>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <img src="images/KyleClayRichards_RockwellHomes_Thumbnail.jpg" />
+                <div class="item rockwell-homes">
+                    <img class="mobile" src="images/projcts/rockwell-homes/KyleClayRichards_RockwellHomes_Thumbnail.jpg" />
+                    <div class="thumbnail-animation">
+                        <img class="one" src="images/projects/rockwell-homes/KyleClayRichards_RockwellHomes_Desktop_FloorPlans_MiniScreenshot.jpg" />
+                        <img class="two" src="images/projects/rockwell-homes/KyleClayRichards_RockwellHomes_Desktop_Homepage_MiniScreenshot.jpg" />
+                        <img class="three" src="images/projects/rockwell-homes/KyleClayRichards_RockwellHomes_Desktop_FloorPlanHover_MiniScreenshot.png" />
+                        <img class="four" src="images/projects/rockwell-homes/KyleClayRichards_RockwellHomes_Desktop_FloorPlanPage_MiniScreenshot.png" />
+                    </div>
                     <div class="hoverlay">
                         <div class="hoverlay-content">
-                            <h3>Rockwell Homes</h3>
-                            <p class="secondary-heading sm">Web Design, Front-end Web Development</p>
-                            <div class="actions">
-                                <a class="btn white" href="https://www.rockwellhomes.net" target="_blank">View Site</a>
-                            </div>
+                            <h4>Rockwell Homes</h4>
+                            <a class="btn reverse" href="https://www.rockwellhomes.net" target="_blank">View Site</a>
                         </div>
                     </div>
                 </div>
@@ -72,11 +75,8 @@
                     <img src="images/KyleClayRichards_FirstCallJewel_Thumbnail.jpg" />
                     <div class="hoverlay">
                         <div class="hoverlay-content">
-                            <h3>First Call Jewel</h3>
-                            <p class="secondary-heading sm">Web Design, Front-end Web Development</p>
-                            <div class="actions">
-                                <a class="btn white" href="https://www.firstcalljewel.com" target="_blank">View Site</a>
-                            </div>
+                            <h4>First Call Jewel</h4>
+                            <a class="btn reverse" href="https://www.firstcalljewel.com" target="_blank">View Site</a>
                         </div>
                     </div>
                 </div>
@@ -84,14 +84,13 @@
                     <img src="images/KyleClayRichards_SpaNoel_Logo_Thumbnail.jpg" />
                     <div class="hoverlay">
                         <div class="hoverlay-content">
-                            <h3>Spa Noel</h3>
-                            <p class="secondary-heading sm">Logo Design</p>
+                            <h4>Spa Noel</h4>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="actions text-center">
-                <a class="btn lg" href="portfolio/index.html">View Full Portfolio</a>
+                <div class="actions lg text-right">
+                    <a class="btn" href="portfolio/index.html">View Full Portfolio</a>
+                </div>
             </div>
         </section>
         <section class="content personal-projects">
@@ -125,7 +124,7 @@
                 <h2>Let's work together.</h2>
                 <p class="intro">If you want to hire me, collaborate on a project, or simply pick my brain, please send me a message. I'm always down to discuss ideas.</p>
                 <div class="actions">
-                    <a class="btn lg white" href="/contact">Get in touch</a>
+                    <a class="btn lg reverse" href="/contact">Get in touch</a>
                 </div>
             </div>
         </section>

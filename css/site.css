@@ -5,13 +5,14 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: #202020;
-    line-height: 1.2;
+    line-height: 1;
 }
 body .dark {
     color: #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -92,17 +93,39 @@ h6 {
 }
 
 /* Header & Navigation */
+header.main {
+    background: #2C2833;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
 header.main .container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 25px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .logo img, .foot-logo img {
     width: 43px;
     height: 50px;
+    margin-right: 20px;
+}
+.logo h1, .logo h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
 }
 nav.main ul {
     display: flex;
@@ -111,11 +134,14 @@ nav.main ul {
     align-items: center;
 }
 nav.main ul li {
-    margin: 0 20px;
+    margin-left: 50px;
 }
 nav.main ul li a, nav.main ul li a:visited {
     text-decoration: none;
-    color: #202020;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 nav.main ul li a:hover, nav.main ul li a:focus {
     color: #999;
@@ -155,8 +181,20 @@ footer.main .socials ul {
             }
 
 /* Framework & Utilities */
+.p-0 {
+    padding: 0 !important;
+}
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+.pt-0 {
+    padding-bottom: 0 !important;
+}
 .text-center {
     text-align: center;
+}
+.text-right {
+    text-align: right;
 }
 section.content {
     padding: 30px 0;
@@ -170,66 +208,74 @@ section.content {
     max-width: 992px;
 }
 .container.lg {
-    max-width: calc(100% - 100px);
+    max-width: 1500px;
+}
+.container.full {
+    max-width: calc(100% - 220px);
 }
 
 .actions {
     margin-top: 25px;
+    width: 100%;
+}
+.actions.lg {
+    margin-top: 100px;
 }
 
 .btn {
-    border: 2px solid #ff990d;
-    border-radius: 9999px;
-    color: #ff990d;
-    padding: 10px 20px;
+    border-bottom: 4px solid #333;
+    color: #333;
+    padding: 20px 0;
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 25px;
     display: inline-block;
     -webkit-transition: all 0.3s;-transition: all 0.3s;
     transition: all 0.3s;-transition: all 0.3s;
 }
 .btn.sm {
-    padding: 5px 12px;
-    font-size: 14px;
+    padding: 15px 0;
+    font-size: 20px;
+    border-bottom: 3px solid #202020;
 }
 .btn.lg {
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 25px 0;
+    font-size: 30px;
+    border-bottom: 5px solid #202020;
 }
-.btn.secondary {
-    border: none;
-    background: rgba(255, 153, 13, 0.25);
-    color: #202020;
-}
-.btn.white {
-    border: 2px solid #fff;
+.btn.reverse {
+    border-bottom: 4px solid #fff;
     color: #fff;
 }
-.btn.black {
-    border: 2px solid #202020;
-    color: #202020;
+.btn.sm.reverse {
+    padding: 25px 0;
+    font-size: 20px;
+    border-bottom: 3px solid #fff;
+}
+.btn.lg.reverse {
+    padding: 25px 0;
+    font-size: 30px;
+    border-bottom: 5px solid #fff;
 }
 .btn.inactive {
     cursor: initial;
-    background: #e3e3e3;
+    color: #999;
+    border-bottom: 4px solid #999;
 }
-.btn:hover, .btn:focus,
-.btn.secondary:hover, .btn.secondary:focus {
-    background: #ff990d;
-    color: #fff;
+.btn.sm.inactive {
+    border-bottom: 3px solid #999;
 }
-.btn.white:hover, .btn.white:focus {
-    background: #fff;
-    color: #202020;
+.btn.lg.inactive {
+    border-bottom: 5px solid #999;
 }
-.btn.black:hover, .btn.black:focus {
-    background: #202020;
-    color: #fff;
+.btn:hover, .btn:focus {
+    color: #ccc;
+    border-bottom-color: #ccc !important;
 }
 .btn.inactive:hover, .btn.inactive:focus {
-    background:#e3e3e3;
-    color: #202020;
+    color: #999;
+    border-color: #999;
 }
 
 @media (min-width: 992px) {
@@ -241,88 +287,174 @@ section.content {
 /* Home Page */
 /* 1. Introduction */
 section.content.introduction {
-    text-align: center;
-    padding: 0;
+    padding-bottom: 100px;
+    height: 100vh;
+    background: #2C2833;
+    display: flex;
+    align-items: flex-end;
 }
 .introduction .container {
-    background: #2C2833;
-    background: -webkit-linear-gradient(135deg, rgba(44, 40, 51, 1) 0%, rgba(82, 45, 186, 1) 100%);
-    background: -moz-linear-gradient(135deg, rgba(44, 40, 51, 1) 0%, rgba(82, 45, 186, 1) 100%);
-    background: linear-gradient(135deg, rgba(44, 40, 51, 1) 0%, rgba(82, 45, 186, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2C2833", endColorstr="#522DBA", GradientType=0);
-    padding: 60px 30px;
-    border-radius: 25px;
+    width: 100%;
+    padding-bottom: 100px;
 }
-.introduction h1 {
-    display: inline-block;
-    margin-bottom: 10px;
-    background-color: #ff990d;
-    background-image: linear-gradient(45deg, #FF990D, #FFB70D);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    line-height: 1.2;
-}
-.introduction img {
-    border-radius: 9999px;
-    max-width: 300px;
-    margin: 25px auto -210px;
-    border: 4px solid #FFB70D;
+.introduction h2 {
+    font-size: 100px;
+    font-weight: 200;
+    margin: 0;
 }
 
-/* 2. Statement */
-.statement {
-    margin-top: 150px;
+/* 2. Value Statement */
+.value-statement {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
 }
+
+    .value-statement h2 {
+        font-size: 75px;
+        font-style: italic;
+        font-weight: 700;
+    }
 
 /* 3. Featured Projects */
-.featured-projects h2 {
-    text-align: center;
-    margin-bottom: 25px;
+.featured-projects .container,
+.featured-projects h3 {
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 30px;
 }
+
+.featured-projects h3 {
+    margin-bottom: 100px;
+    font-size: 75px;
+}
+
 .featured-projects .container .item {
     margin-bottom: 25px;
+    overflow: hidden;
 }
-    .featured-projects .container .item img {
-        border-radius: 25px;
+
+    .featured-projects .container .item > img {
         width: 100%;
-        border: 2px solid #e3e3e3;
+        border: 1px solid #e3e3e3;
     }
+
+    .featured-projects .container .item img.mobile {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        border: none;
+    }
+
     .featured-projects .container .item:last-child {
         margin-bottom: 0;
     }
+
     .featured-projects .item .hoverlay {
         position: absolute;
-        top: 0;
         right: 0;
-        bottom: 0;
+        bottom: -50%;
         left: 0;
         width: 100%;
-        height: 100%;
-        background: rgba(44,40,51,0.5);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
+        height: 50%;
+        background: rgba(44, 40, 51, 0.75);
+        background: -webkit-linear-gradient(0deg, rgba(44, 40, 51, 1) 0%, rgba(44, 40, 51, 0) 100%);
+        background: -moz-linear-gradient(0deg, rgba(44, 40, 51, 1) 0%, rgba(44, 40, 51, 0) 100%);
+        background: linear-gradient(0deg, rgba(44, 40, 51, 1) 0%, rgba(44, 40, 51, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2C2833", endColorstr="#2C2833", GradientType=0);
         opacity: 0;
-        border-radius: 25px;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
+        z-index: 10;
+        -webkit-transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.5s;
     }
+
         .featured-projects .item .hoverlay .hoverlay-content {
-            padding: 0 30px;
+            padding: 25px;
             width: 100%;
             position: absolute;
-            left: 50%;
-            top: 50%;
-            -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+            right: 0;
+            bottom: 0;
+            left: 0;
             color: #fff;
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: end;
         }
+
+            .featured-projects .item .hoverlay .hoverlay-content h4 {
+                margin-bottom: 0;
+            }
+
+            .featured-projects .item .hoverlay .hoverlay-content .btn {
+                padding: 10px 0;
+            }
+
         .featured-projects .item:hover .hoverlay {
             opacity: 1;
+            bottom: 0;
         }
+
+        .featured-projects .container .item.rockwell-homes .thumbnail-animation .one {
+            width: 100%;
+            -webkit-transition: all ease-in-out 1s;
+            transition: all ease-in-out 1s;
+        }
+
+            .featured-projects .item.rockwell-homes:hover .thumbnail-animation .one {
+                opacity: 0.5;
+            }
+
+        .featured-projects .container .item.rockwell-homes .thumbnail-animation .two {
+            position: absolute;
+            right: 0;
+            top: 0;
+            box-shadow: 0 0 40px #000;
+            -webkit-transition: all ease-in-out 1s;
+            transition: all ease-in-out 1s;
+        }
+
+            .featured-projects .item.rockwell-homes:hover .thumbnail-animation .two {
+                top: -250px;
+            }
+        
+        .featured-projects .container .item.rockwell-homes .thumbnail-animation .three {
+            position: absolute;
+            bottom: 59px;
+            left: 36px;
+            max-width: 138px;
+            opacity: 0;
+            z-index: 2;
+            border-radius: 5px;
+            box-shadow: 20px -10px 20px rgba(0,0,0,0.5);
+            -webkit-transition: all ease-in-out 1s;
+            -webkit-transition-delay: 0.5s;
+            transition: all ease-in-out 1s;
+            transition-delay: 0.5s;
+        }
+            .featured-projects .container .item.rockwell-homes:hover .thumbnail-animation .three {
+                opacity: 1;
+            }
+
+        .featured-projects .container .item.rockwell-homes .thumbnail-animation .four {
+            max-width: 450px;
+            position: absolute;
+            left: 25px;
+            top: 100px;
+            opacity: 0;
+            z-index: 1;
+            border-radius: 10px;
+            box-shadow: 0 0 30px #000;
+            -webkit-transition: all ease-in-out 1s;
+            -webkit-transition-delay: 1s;
+            transition: all ease-in-out 1s;
+            transition-delay: 1s;
+        }
+            .featured-projects .container .item.rockwell-homes:hover .thumbnail-animation .four {
+                opacity: 1;
+                top: 150px;
+            }
 
 @media (min-width: 768px) {
     .featured-projects .container {
@@ -335,7 +467,7 @@ section.content.introduction {
             width: calc(50% - 15px);
         }
         .featured-projects .container .item:nth-of-type(3),
-        .featured-projects .container .item:last-child {
+        .featured-projects .container .item:nth-of-type(4) {
             margin-bottom: 0;
         }
 }
