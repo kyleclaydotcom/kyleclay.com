@@ -289,6 +289,9 @@ footer#site-footer .socials {
     margin-top: 50px;
 }
 
+.services-feature {
+    padding: 80px 20px;
+}
 .services-feature .component-inner {
     display: flex;
     flex-direction: row;
@@ -307,14 +310,25 @@ footer#site-footer .socials {
             color: #ffb70d;
             margin: 15px 0;
         }
+@media (min-width: 992px) {
+    .services-feature {
+        padding: 120px 20px;
+    }
+}
 
 .slider.top-forward {
-    padding-top: 100px;
+    padding-top: 80px;
 }
+@media (min-width: 992px) {
+    .slider.top-forward {
+        padding-top: 120px;
+    }
+}
+
 
 /* Forms */
 .contact-form {
-    padding: 100px 20px;
+    padding: 80px 20px;
     color: #1E152A;
 }
     .contact-form:before {
@@ -369,3 +383,8 @@ footer#site-footer .socials {
             .contact-form .form-item textarea {
                 min-height: 100px;
             }
+@media (min-width: 992px) {
+    .contact-form {
+        padding: 120px 20px;
+    }
+}
