@@ -291,6 +291,22 @@ footer#site-footer .socials {
         line-height: 1;
         color: #1E152A;
     }
+@media (min-width: 400px) {
+    .home-feature p.heading.hero {
+        font-size: 70px;
+    }
+        .home-feature p.heading.hero:last-of-type {
+            font-size: 40px;
+        }
+}
+@media (min-width: 500px) {
+    .home-feature p.heading.hero {
+        font-size: 90px;
+    }
+        .home-feature p.heading.hero:last-of-type {
+            font-size: 50px;
+        }
+}
 @media (min-width: 576px) {
     .home-feature p.heading.hero {
         font-size: 100px;
@@ -487,6 +503,11 @@ footer#site-footer .socials {
             }
 
 @media (min-width: 768px) {
+    .contact-form form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .contact-form .form-item {
         width: 48%;
     }
@@ -504,10 +525,6 @@ footer#site-footer .socials {
     .contact-form .form-container {
         padding: 50px;
     }
-    .contact-form form {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    
         
 }
