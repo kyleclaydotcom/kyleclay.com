@@ -151,8 +151,8 @@ header#site-header {
     z-index: 1000;
 }
 header#site-header .logo img {
-    width: 45px;
-    height: 52px;
+    width: 35px;
+    height: 40px;
 }
 header#site-header .container {
     display: flex;
@@ -189,6 +189,10 @@ header#site-header .container {
     header#site-header {
         padding: 15px;
         height: 100px;
+    }
+    header#site-header .logo img {
+        width: 45px;
+        height: 52px;
     }
     header#site-header .container {
         justify-content: space-between;
@@ -342,14 +346,38 @@ footer#site-footer .socials {
     margin-top: 50px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .banner.takeover.about-feature {
-        min-height: calc(100vh - 100px);
-        height: calc(100vh - 100px);
+        padding: 0 25px;
     }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 768px) {
+    .banner.takeover.about-feature {
+        min-height: calc(75vh - 100px);
+        height: calc(75vh - 100px);
+    }
+    .about-feature h1 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner.takeover.about-feature {
+        padding: 0 50px;
+    }
+    .about-feature h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-feature h1 {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1500px) {
     .about-feature h1 {
         font-size: 75px;
     }
@@ -456,28 +484,29 @@ footer#site-footer .socials {
             .contact-form .form-item textarea {
                 min-height: 100px;
             }
+
+@media (min-width: 768px) {
+    .contact-form .form-item {
+        width: 48%;
+    }
+    .contact-form .form-item:nth-of-type(5),
+    .contact-form .form-item:nth-of-type(6) {
+        width: 100%;
+    }
+}
+
 @media (min-width: 992px) {
     .contact-form {
         padding: 120px 20px;
     }
 
     .contact-form .form-container {
-        background: #ffffff;
         padding: 50px;
-        border-radius: 15px;
-        max-width: 800px;
-        margin: auto;
     }
     .contact-form form {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-        .contact-form .form-item {
-            width: 48%;
-        }
-        .contact-form .form-item:nth-of-type(5),
-        .contact-form .form-item:nth-of-type(6) {
-            width: 100%;
-        }
+        
 }
