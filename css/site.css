@@ -241,6 +241,11 @@ footer#site-footer .socials {
     }
 }
 
+.banner.takeover.home-feature {
+    min-height: calc(50vh - 60px);
+    height: calc(50vh - 60px);
+}
+
 .home-feature:before {
     content:'';
     display: block;
@@ -262,7 +267,7 @@ footer#site-footer .socials {
     font-weight: 900;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 200px;
+    font-size: 40px;
     line-height: 1;
     display: block;
 }
@@ -271,14 +276,43 @@ footer#site-footer .socials {
         font-weight: 300;
         font-style: italic;
         text-transform: none;
-        font-size: 100px;
+        font-size: 25px;
         text-align: right;
         line-height: 1;
         color: #1E152A;
     }
 
+@media (min-width: 992px) {
+    .banner.takeover.home-feature {
+        min-height: calc(100vh - 100px);
+        height: calc(100vh - 100px);
+    }
+    
+    .home-feature p.heading.hero {
+        font-size: 200px;
+    }
+        .home-feature p.heading.hero:last-of-type {
+            font-size: 100px;
+        }
+}
+
+@media (min-width: 1350px) {
+    .home-feature p.heading.hero {
+        font-size: 200px;
+    }
+        .home-feature p.heading.hero:last-of-type {
+            font-size: 100px;
+        }
+}
+
+.banner.takeover.about-feature {
+    min-height: calc(50vh - 60px);
+    height: calc(50vh - 60px);
+}
+
 .about-feature h1 {
-    font-size: 75px;
+    font-size: 28px;
+    line-height: 1.2;
     text-transform: none;
     font-style: italic;
     font-weight: 700;
@@ -289,19 +323,38 @@ footer#site-footer .socials {
     margin-top: 50px;
 }
 
+@media (min-width: 992px) {
+    .banner.takeover.about-feature {
+        min-height: calc(100vh - 100px);
+        height: calc(100vh - 100px);
+    }
+}
+
+@media (min-width: 1350px) {
+    .about-feature h1 {
+        font-size: 75px;
+    }
+
+    .about-feature .link {
+        margin-top: 50px;
+    }
+}
+
 .services-feature {
     padding: 80px 20px;
 }
 .services-feature .component-inner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
 }
     .services-feature .item {
-        padding: 0 15px;
         width: 33.3333%;
+        margin-bottom: 50px;
     }
+        .services-feature .item:last-child {
+            margin-bottom: 0;
+        }
         .services-feature .item img {
             width: 75px;
             height: 75px;
@@ -314,6 +367,19 @@ footer#site-footer .socials {
     .services-feature {
         padding: 120px 20px;
     }
+
+    .services-feature .component-inner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        .services-feature .item {
+            padding: 0 15px;
+            width: 33.3333%;
+            margin-bottom: 0;
+        }
+            .services-feature .item:last-child {
+                margin-bottom: 0;
+            }
 }
 
 .slider.top-forward {
@@ -324,7 +390,6 @@ footer#site-footer .socials {
         padding-top: 120px;
     }
 }
-
 
 /* Forms */
 .contact-form {
@@ -344,25 +409,23 @@ footer#site-footer .socials {
     }
     .contact-form .form-container {
         background: #ffffff;
-        padding: 50px;
+        padding: 25px;
         border-radius: 15px;
         max-width: 800px;
         margin: auto;
     }
+        .contact-form .form-container h2 {
+            margin-bottom: 15px;
+        }
     .contact-form form {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
         margin-top: 30px;
     }
         .contact-form .form-item {
-            width: 48%;
-            margin-bottom: 15px;
-        }
-        .contact-form .form-item:nth-of-type(5),
-        .contact-form .form-item:nth-of-type(6) {
             width: 100%;
+            margin-bottom: 15px;
         }
         .contact-form .form-item:nth-of-type(6) {
             margin-bottom: 0;
@@ -374,7 +437,7 @@ footer#site-footer .socials {
             .contact-form .form-item input,
             .contact-form .form-item textarea {
                 display: block;
-                border: 1px solid #e3e3e3;
+                border: 1px solid #ccc;
                 border-radius: 5px;
                 min-height: 50px;
                 padding: 10px;
@@ -387,4 +450,24 @@ footer#site-footer .socials {
     .contact-form {
         padding: 120px 20px;
     }
+
+    .contact-form .form-container {
+        background: #ffffff;
+        padding: 50px;
+        border-radius: 15px;
+        max-width: 800px;
+        margin: auto;
+    }
+    .contact-form form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        .contact-form .form-item {
+            width: 48%;
+        }
+        .contact-form .form-item:nth-of-type(5),
+        .contact-form .form-item:nth-of-type(6) {
+            width: 100%;
+        }
 }

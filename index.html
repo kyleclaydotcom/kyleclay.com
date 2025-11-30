@@ -187,21 +187,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     $('.top-forward').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 8000,
-        dots: false,
-        arrows: false,
-        infinite: true,
-        cssEase: 'linear',
-        pauseOnHover: false,
-        pasueOnFocus: false
-    });
-
-    $('.bottom-reverse').slick({
-        slidesToShow: 4,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 0,
@@ -212,7 +198,51 @@
         cssEase: 'linear',
         pauseOnHover: false,
         pasueOnFocus: false,
-        rtl: true
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1350,
+                settings: {
+                    slidesToShow: 4
+                }
+            }
+        ]
+    });
+
+    $('.bottom-reverse').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 8000,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        cssEase: 'linear',
+        pauseOnHover: false,
+        pasueOnFocus: false,
+        rtl: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1350,
+                settings: {
+                    slidesToShow: 4
+                }
+            }
+        ]
     });
 </script>
 
