@@ -139,7 +139,7 @@ a:not([class]) {
 /* Header */
 header#site-header {
     background: #1E152A;
-    padding: 15px 25px;
+    padding: 10px 25px;
     display: flex;
     align-items: center;
     height: 60px;
@@ -157,11 +157,11 @@ header#site-header .logo img {
 header#site-header .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0;
 }
     header#site-header nav.main-nav {
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
         font-family: "Zalando Sans Expanded", "IBM Plex Sans", sans-serif;
@@ -185,10 +185,16 @@ header#site-header .container {
             margin: 0;
         }
 
-@media (min-width: 1500px) {
+@media (min-width: 768px) {
     header#site-header {
-        padding: 15px 0;
+        padding: 15px;
         height: 100px;
+    }
+    header#site-header .container {
+        justify-content: space-between;
+    }
+    header#site-header nav.main-nav {
+        display: flex;
     }
 }
 
@@ -281,22 +287,35 @@ footer#site-footer .socials {
         line-height: 1;
         color: #1E152A;
     }
-
-@media (min-width: 992px) {
+@media (min-width: 576px) {
+    .home-feature p.heading.hero {
+        font-size: 100px;
+    }
+        .home-feature p.heading.hero:last-of-type {
+            font-size: 60px;
+        }
+}
+@media (min-width: 768px) {
     .banner.takeover.home-feature {
         min-height: calc(100vh - 100px);
         height: calc(100vh - 100px);
     }
-    
     .home-feature p.heading.hero {
-        font-size: 200px;
+        font-size: 140px;
     }
         .home-feature p.heading.hero:last-of-type {
-            font-size: 100px;
+            font-size: 80px;
         }
 }
-
-@media (min-width: 1350px) {
+@media (min-width: 992px) {
+    .home-feature p.heading.hero {
+        font-size: 180px;
+    }
+        .home-feature p.heading.hero:last-of-type {
+            font-size: 90px;
+        }
+}
+@media (min-width: 1200px) {
     .home-feature p.heading.hero {
         font-size: 200px;
     }
@@ -323,7 +342,7 @@ footer#site-footer .socials {
     margin-top: 50px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .banner.takeover.about-feature {
         min-height: calc(100vh - 100px);
         height: calc(100vh - 100px);
@@ -380,15 +399,6 @@ footer#site-footer .socials {
             .services-feature .item:last-child {
                 margin-bottom: 0;
             }
-}
-
-.slider.top-forward {
-    padding-top: 80px;
-}
-@media (min-width: 992px) {
-    .slider.top-forward {
-        padding-top: 120px;
-    }
 }
 
 /* Forms */
