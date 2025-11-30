@@ -277,7 +277,7 @@ footer#site-footer .socials {
     font-weight: 900;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 75px;
+    font-size: 50px;
     line-height: 1;
     display: block;
 }
@@ -286,7 +286,7 @@ footer#site-footer .socials {
         font-weight: 300;
         font-style: italic;
         text-transform: none;
-        font-size: 40px;
+        font-size: 30px;
         text-align: right;
         line-height: 1;
         color: #1E152A;
@@ -397,7 +397,8 @@ footer#site-footer .socials {
 }
     .services-feature .item {
         width: 100%;
-        margin-bottom: 50px;
+        margin: 0 auto 50px;
+        max-width: 500px;
     }
         .services-feature .item:last-child {
             margin-bottom: 0;
@@ -422,7 +423,7 @@ footer#site-footer .socials {
         .services-feature .item {
             padding: 0 15px;
             width: 33.3333%;
-            margin-bottom: 0;
+            margin: 0;
         }
             .services-feature .item:last-child {
                 margin-bottom: 0;
