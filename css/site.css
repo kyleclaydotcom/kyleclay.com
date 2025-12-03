@@ -546,11 +546,11 @@ footer#site-footer .socials {
         flex-wrap: nowrap;
         justify-content: flex-end;
     }
-        .about-timeline .timeline-wrapper .item .year {
+        .about-timeline .timeline-wrapper .item > .year {
             width: 100px;
             padding: 5px;
         }
-        .about-timeline .timeline-wrapper .item .milestone {
+        .about-timeline .timeline-wrapper .item > .milestone {
             width: calc(100% - 100px);
             padding: 5px;
         }
