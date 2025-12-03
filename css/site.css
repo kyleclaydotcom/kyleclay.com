@@ -138,7 +138,7 @@ a:not([class]) {
 
 /* Header */
 header#site-header {
-    background: #1E152A;
+    background: rgba(30, 21, 42, 0.9);
     padding: 10px 25px;
     display: flex;
     align-items: center;
