@@ -255,6 +255,8 @@ footer#site-footer .socials {
 .title-banner {
     padding: 100px 20px;
     text-align: center;
+    overflow: hidden;
+    background: rgba(17,12,24,0.9);
 }
     .title-banner .secondary-heading {
         font-family: "Zalando Sans Expanded", sans-serif;
