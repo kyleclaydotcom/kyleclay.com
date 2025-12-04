@@ -589,6 +589,9 @@ ul.timeline-wrapper > li:nth-of-type(9):before,
 ul.timeline-wrapper > li:nth-of-type(10):before {
     content:'25';
 }
+ul.timeline-wrapper > li:nth-of-type(10):before {
+    width: 95px;
+}
 ul.timeline-wrapper > li:nth-of-type(11):before {
     content:'26';
 }
