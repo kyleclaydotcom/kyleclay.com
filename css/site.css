@@ -541,9 +541,6 @@ footer#site-footer .socials {
 ul.timeline-wrapper li, ul.timeline-wrapper li ul {
     margin-left: 20px;
 }
-ul.timeline-wrapper > li {
-    padding-left: 25px;
-}
 ul.timeline-wrapper > li:before {
     content:'';
     display: inline-block;
@@ -572,9 +569,11 @@ ul.timeline-wrapper > li:nth-of-type(6):before {
 ul.timeline-wrapper > li:nth-of-type(7):before {
     content:'24';
 }
-ul.timeline-wrapper > li:nth-of-type(8):before {
+ul.timeline-wrapper > li:nth-of-type(8):before,
+ul.timeline-wrapper > li:nth-of-type(9):before,
+ul.timeline-wrapper > li:nth-of-type(10):before {
     content:'25';
 }
-ul.timeline-wrapper > li:nth-of-type(9):before {
+ul.timeline-wrapper > li:nth-of-type(11):before {
     content:'26';
 }
