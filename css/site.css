@@ -266,8 +266,8 @@ footer#site-footer .socials {
 .title-banner:before {
     content:'';
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 1350px;
+    height: 1350px;
     border-radius: 250px;
     position: absolute;
     top: 50%;
@@ -578,6 +578,9 @@ footer#site-footer .socials {
 }
 
 /* About Page */
+.about-timeline {
+    padding: 80px 20px;
+}
 .about-timeline ul {
     list-style: none;
 }
@@ -640,4 +643,10 @@ ul.timeline-wrapper > li:nth-of-type(10):before {
 }
 ul.timeline-wrapper > li:nth-of-type(11):before {
     content:'26';
+}
+
+@media (min-width: 992px) {
+    .about-timeline {
+        padding: 120px 20px;
+    }
 }
