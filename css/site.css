@@ -579,13 +579,13 @@ footer#site-footer .socials {
 
 /* About Page */
 .about-timeline {
-    padding: 80px 20px;
+    padding: 80px;
 }
 .about-timeline ul {
     list-style: none;
 }
 .about-timeline sup, .about-timeline sub {
-    font-size: 25px;
+    font-size: 8px;
 }
 .about-timeline sub {
     vertical-align: baseline;
@@ -596,7 +596,7 @@ ul.timeline-wrapper li ul {
 ul.timeline-wrapper {
     font-family: "Zalando Sans Expanded", sans-serif;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 16px;
     text-transform: uppercase;
 }
     ul.timeline-wrapper > li > ul {
@@ -610,7 +610,7 @@ ul.timeline-wrapper > li:before {
     display: inline-block;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
-    width: 75px;
+    width: 20px;
 }
 ul.timeline-wrapper > li:nth-of-type(1):before {
     content:'90';
@@ -639,7 +639,7 @@ ul.timeline-wrapper > li:nth-of-type(10):before {
     content:'25';
 }
 ul.timeline-wrapper > li:nth-of-type(10):before {
-    width: 92px;
+    width: 42px;
 }
 ul.timeline-wrapper > li:nth-of-type(11):before {
     content:'26';
@@ -647,6 +647,28 @@ ul.timeline-wrapper > li:nth-of-type(11):before {
 
 @media (min-width: 992px) {
     .about-timeline {
-        padding: 120px 20px;
+        padding: 120px 0;
     }
+}
+
+@media (min-width: 1350px) {
+    .about-timeline sup, .about-timeline sub {
+        font-size: 25px;
+    }
+    ul.timeline-wrapper li ul {
+        margin-left: 120px;
+    }
+    ul.timeline-wrapper {
+        font-family: "Zalando Sans Expanded", sans-serif;
+        font-weight: 900;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+    ul.timeline-wrapper > li:before {
+    content:'';
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    width: 75px;
+}
 }
