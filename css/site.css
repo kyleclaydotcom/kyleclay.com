@@ -275,6 +275,11 @@ footer#site-footer .socials {
     color: #ffb70d;
 }
 
+.title-banner p {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
 @media (min-width: 992px) {
     .title-banner {
         padding: 120px 20px;
@@ -499,14 +504,14 @@ footer#site-footer .socials {
         left: 0;
         background-color: #110c18;
     }
-    .contact-form .form-container {
+    .contact-form .container {
         background: #ffffff;
         padding: 25px;
         border-radius: 15px;
         max-width: 800px;
         margin: auto;
     }
-        .contact-form .form-container h2 {
+        .contact-form .container h2 {
             margin-bottom: 15px;
         }
     .contact-form form {
@@ -559,7 +564,7 @@ footer#site-footer .socials {
         padding: 120px 20px;
     }
 
-    .contact-form .form-container {
+    .contact-form .container {
         padding: 50px;
     }
 }
