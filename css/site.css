@@ -558,6 +558,9 @@ footer#site-footer .socials {
 .about-timeline sup, .about-timeline sub {
     font-size: 25px;
 }
+.about-timeline sub {
+    vertical-align: baseline;
+}
 ul.timeline-wrapper li ul {
     margin-left: 120px;
 }
