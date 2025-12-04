@@ -546,6 +546,9 @@ ul.timeline-wrapper {
     font-weight: 900;
     font-size: 32px;
 }
+ul.timeline-wrapper > li {
+    margin-left: 0;
+}
 ul.timeline-wrapper > li:before {
     content:'';
     display: inline-block;
