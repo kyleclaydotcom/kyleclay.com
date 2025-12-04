@@ -253,10 +253,15 @@ footer#site-footer .socials {
 
 /* Interior Title Banners */
 .title-banner {
-    padding: 100px 20px;
+    padding: 80px 20px;
     text-align: center;
     overflow: hidden;
-    background: rgba(17,12,24,0.9);
+    background: rgb(255, 183, 13,0.1);
+    background: -webkit-linear-gradient(45deg, rgb(255, 183, 13) 0%, rgba(255, 153, 13, 1) 100%);
+    background: -moz-linear-gradient(45deg, rgba(255, 183, 13, 1) 0%, rgba(255, 153, 13, 1) 100%);
+    background: linear-gradient(45deg, rgba(255, 183, 13, 1) 0%, rgba(255, 153, 13, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFB70D", endColorstr="#FF990D", GradientType=0);
+    color: #1E152A;
 }
 .title-banner:before {
     content:'';
@@ -269,11 +274,7 @@ footer#site-footer .socials {
     left: 50%;
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    background: rgb(255, 183, 13,0.1);
-    background: -webkit-linear-gradient(45deg, rgb(255, 183, 13) 0%, rgba(255, 153, 13, 1) 100%);
-    background: -moz-linear-gradient(45deg, rgba(255, 183, 13, 1) 0%, rgba(255, 153, 13, 1) 100%);
-    background: linear-gradient(45deg, rgba(255, 183, 13, 1) 0%, rgba(255, 153, 13, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFB70D", endColorstr="#FF990D", GradientType=0);
+    background: #1E152A;
     opacity: 0.1;
 }
     .title-banner .secondary-heading {
@@ -287,6 +288,11 @@ footer#site-footer .socials {
         font-family: "IBM Plex Sans", sans-serif;
         font-weight: 300;
     }
+@media (min-width: 992px) {
+    .title-banner {
+        padding: 120px 20px;
+    }
+}
 
 .banner.takeover.home-feature {
     min-height: calc(50vh - 60px);
