@@ -538,7 +538,7 @@ footer#site-footer .socials {
 .about-timeline ul {
     list-style: none;
 }
-.about-timeline sup {
+.about-timeline sup, .about-timeline sub {
     font-size: 25px;
 }
 ul.timeline-wrapper li ul {
