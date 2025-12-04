@@ -205,7 +205,7 @@ header#site-header .container {
 /* Footer */
 footer#site-footer {
     padding: 100px 20px;
-    background: #110c18;
+    background: rgba(17, 12, 24,0.9);
 }
 footer#site-footer .footer-logo {
     margin-bottom: 60px;
@@ -258,6 +258,24 @@ footer#site-footer .socials {
     overflow: hidden;
     background: rgba(17,12,24,0.9);
 }
+.title-banner:before {
+    content:'';
+    display: block;
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: rgb(255, 183, 13,0.1);
+    background: -webkit-linear-gradient(45deg, rgb(255, 183, 13) 0%, rgba(255, 153, 13, 1) 100%);
+    background: -moz-linear-gradient(45deg, rgba(255, 183, 13, 1) 0%, rgba(255, 153, 13, 1) 100%);
+    background: linear-gradient(45deg, rgba(255, 183, 13, 1) 0%, rgba(255, 153, 13, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFB70D", endColorstr="#FF990D", GradientType=0);
+    opacity: 0.1;
+}
     .title-banner .secondary-heading {
         font-family: "Zalando Sans Expanded", sans-serif;
         font-size: 24px;
@@ -277,7 +295,7 @@ footer#site-footer .socials {
     overflow-y: scroll;
 }
 
-.home-feature:before, .title-banner:before {
+.home-feature:before {
     content:'';
     display: block;
     width: 2000px;
