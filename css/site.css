@@ -592,6 +592,7 @@ footer#site-footer .socials {
 }
 ul.timeline-wrapper li ul {
     margin-left: 20px;
+    font-size: 14px;
 }
 ul.timeline-wrapper {
     font-family: "Zalando Sans Expanded", sans-serif;
@@ -604,7 +605,7 @@ ul.timeline-wrapper {
     }
 ul.timeline-wrapper > li {
     margin-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 ul.timeline-wrapper > li:before {
     content:'';
