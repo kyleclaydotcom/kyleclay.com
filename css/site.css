@@ -596,7 +596,7 @@ ul.timeline-wrapper li ul {
 ul.timeline-wrapper {
     font-family: "Zalando Sans Expanded", sans-serif;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
 }
     ul.timeline-wrapper > li > ul {
@@ -604,10 +604,11 @@ ul.timeline-wrapper {
     }
 ul.timeline-wrapper > li {
     margin-left: 0;
+    margin-bottom: 10px;
 }
 ul.timeline-wrapper > li:before {
     content:'';
-    display: inline-block;
+    display: block;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
     width: 20px;
@@ -639,7 +640,7 @@ ul.timeline-wrapper > li:nth-of-type(10):before {
     content:'25';
 }
 ul.timeline-wrapper > li:nth-of-type(10):before {
-    width: 42px;
+    width: 24px;
 }
 ul.timeline-wrapper > li:nth-of-type(11):before {
     content:'26';
@@ -652,6 +653,9 @@ ul.timeline-wrapper > li:nth-of-type(11):before {
 }
 
 @media (min-width: 1350px) {
+    ul.timeline-wrapper > li:before {
+        display: inline-block;
+    }
     .about-timeline sup, .about-timeline sub {
         font-size: 25px;
     }
@@ -665,10 +669,13 @@ ul.timeline-wrapper > li:nth-of-type(11):before {
         text-transform: uppercase;
     }
     ul.timeline-wrapper > li:before {
-    content:'';
-    display: inline-block;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 700;
-    width: 75px;
-}
+        content:'';
+        display: inline-block;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 700;
+        width: 75px;
+    }
+    ul.timeline-wrapper > li:nth-of-type(10):before {
+        width: 92px;
+    }
 }
