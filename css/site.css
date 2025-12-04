@@ -544,8 +544,12 @@ ul.timeline-wrapper li, ul.timeline-wrapper li ul {
 ul.timeline-wrapper {
     font-family: "Zalando Sans Expanded", sans-serif;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 60px;
+    text-transform: uppercase;
 }
+    ul.timeline-wrapper > li > ul {
+        font-weight: 400;
+    }
 ul.timeline-wrapper > li {
     margin-left: 0;
 }
