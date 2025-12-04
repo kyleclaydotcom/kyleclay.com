@@ -541,11 +541,15 @@ footer#site-footer .socials {
 ul.timeline-wrapper li, ul.timeline-wrapper li ul {
     margin-left: 20px;
 }
+ul.timeline-wrapper > li {
+    padding-left: 25px;
+}
 ul.timeline-wrapper > li:before {
     content:'';
-    display: block;
+    display: inline-block;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
+    width: 25px;
 }
 ul.timeline-wrapper > li:nth-of-type(1):before {
     content:'90';
