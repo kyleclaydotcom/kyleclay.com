@@ -538,8 +538,8 @@ footer#site-footer .socials {
 .about-timeline ul {
     list-style: none;
 }
-ul.timeline-wrapper li, ul.timeline-wrapper li ul {
-    margin-left: 20px;
+ul.timeline-wrapper li ul {
+    margin-left: 75px;
 }
 ul.timeline-wrapper {
     font-family: "Zalando Sans Expanded", sans-serif;
@@ -558,7 +558,7 @@ ul.timeline-wrapper > li:before {
     display: inline-block;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
-    width: 25px;
+    width: 75px;
 }
 ul.timeline-wrapper > li:nth-of-type(1):before {
     content:'90';
