@@ -695,10 +695,10 @@ ul.timeline-wrapper > li:nth-of-type(11):before {
         max-width: 500px;
         background: #110c18;
         border-radius: 25px;
-        padding: 25px;
     }
         .services .item a {
             text-decoration: none;
+            padding: 25px;
         }
         .services .item:last-child {
             margin-bottom: 0;
@@ -724,7 +724,6 @@ ul.timeline-wrapper > li:nth-of-type(11):before {
         justify-content: space-between;
     }
         .services .item {
-            padding: 0 15px;
             width: calc(33.3333% - 50px);
             margin: 0;
         }
