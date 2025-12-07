@@ -699,6 +699,7 @@ ul.timeline-wrapper > li:nth-of-type(11):before {
         .services .item a {
             text-decoration: none;
             padding: 25px;
+            display: block;
         }
         .services .item:last-child {
             margin-bottom: 0;
@@ -712,7 +713,7 @@ ul.timeline-wrapper > li:nth-of-type(11):before {
             color: #ffb70d;
             margin: 15px 0;
             font-size: 24px;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
         }
 @media (min-width: 992px) {
     .services {
